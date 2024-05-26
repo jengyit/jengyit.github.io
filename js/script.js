@@ -86,37 +86,9 @@ document.getElementById('dark-mode-toggle').addEventListener('click', () => {
 	// on click, check localStorage for the dark mode value, use to apply the opposite of what's saved
 	localStorage.getItem('theme') === 'light' ? enableDarkMode() : disableDarkMode();
 });
-                                
+                    
 
-
-// let currentReview = 0;
-// const reviews = document.querySelectorAll('.cs-item');
-// const totalReviews = reviews.length;
-
-// function showReviews(n) {
-//     reviews.forEach((review, index) => {
-//         review.classList.remove('active');
-//         if (index === n || index === (n + 1) % totalReviews) {
-//             review.classList.add('active');
-//         }
-//     });
-// }
-
-// function nextReview() {
-//     currentReview = (currentReview + 2) % totalReviews;
-//     showReviews(currentReview);
-// }
-
-// function prevReview() {
-//     currentReview = (currentReview - 2 + totalReviews) % totalReviews;
-//     showReviews(currentReview);
-// }
-
-// document.getElementById('next-review').addEventListener('click', nextReview);
-// document.getElementById('prev-review').addEventListener('click', prevReview);
-
-// // Show the first two reviews initially
-// showReviews(currentReview);
+/* Reviews slider*/
 
 let slideIndex = 1;
 showSlides(slideIndex);
